@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Happy Women's Day</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #E75480;
+      font-family: 'Gluten', cursive;
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+    }
+
+
+    .greeting {
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .greeting h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    @keyframes moveUp {
+      0% { transform: translateX(-50%) translateY(100px); }
+      100% { transform: translateX(-50%) translateY(-600px); }
+    }
+
+    .wish {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="greeting">
+      <h1>Hello Bibrity, my favorite woman!</h1>
+      <p>Today is Women's Day, and it's all about you!</p>
+      <p>Thank you for being with me</p>
+    </div>
+
+    <div class="wish">
+      <h3>Happy Women's Day!</h3>
+      <h5>May you always feel as special as you are!</h5>
+       <p>Click the button below to see something special!</p>
+  <button class="next-btn" onclick="location.href='next.html'">Next</button>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function () {
+      document.querySelector('.greeting').style.opacity = 1;
+    };
+  </script>
+
+</body>
+</html>
